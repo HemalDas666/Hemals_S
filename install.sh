@@ -25,11 +25,11 @@ install_panel() {
     # Install PM2 globally
     sudo npm install -g pm2
 
-    echo -e "\n${CYAN}[+] Downloading and setting up the Jtg Panel...${NC}"
+    echo -e "\n${CYAN}[+] Downloading and setting up the Hemal's Panel...${NC}"
     
-    # Check if the Jtg folder already exists
-    if [ -d "Jtg" ]; then
-        echo -e "${YELLOW}[!] The 'Jtg' folder already exists. Please delete it first or use the update option (Option 2).${NC}"
+    # Check if the Hemals_S folder already exists
+    if [ -d "Hemals_S" ]; then
+        echo -e "${YELLOW}[!] The 'Hemals_S' folder already exists. Please delete it first or use the update option (Option 2).${NC}"
         return
     fi
 
@@ -37,7 +37,7 @@ install_panel() {
     git clone https://github.com/HemalDas666/Hemals_S
     
     # Navigate into the directory
-    cd Jtg || { echo -e "${RED}[!] Failed to enter the directory!${NC}"; return; }
+    cd Hemals_S || { echo -e "${RED}[!] Failed to enter the directory!${NC}"; return; }
     
     # Install node modules
     npm i 
@@ -65,9 +65,9 @@ install_panel() {
 update_panel() {
     echo -e "\n${CYAN}[+] Updating the panel...${NC}"
     
-    # Check if the Jtg folder exists
-    if [ -d "Jtg" ]; then
-        cd Jtg || { echo -e "${RED}[!] Failed to enter the directory!${NC}"; return; }
+    # Check if the Hemals_S folder exists
+    if [ -d "Hemals_S" ]; then
+        cd Hemals_S || { echo -e "${RED}[!] Failed to enter the directory!${NC}"; return; }
         
         # Fetch new updates from GitHub
         git stash
@@ -85,7 +85,7 @@ update_panel() {
         # Return to the main directory
         cd ..
     else
-        echo -e "${RED}[!] 'Jtg' directory not found! Please install the panel first (Option 1).${NC}"
+        echo -e "${RED}[!] 'Hemals_S' directory not found! Please install the panel first (Option 1).${NC}"
     fi
 }
 
