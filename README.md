@@ -1,13 +1,13 @@
-# jtg panel
+# Hemal's panel
 
-Made by Jishnu
+Made by Hemal
 
 ## Installation
 
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd jtg-panel
+   cd Hemal_S
    ```
 
 2. Install dependencies:
