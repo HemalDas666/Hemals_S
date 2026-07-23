@@ -1,6 +1,6 @@
 # jtg panel
 
-Made by Jishnu
+Made by Hemal
 
 ## Installation
 
